@@ -1,0 +1,451 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+        
+    <title>Zain App -     Login/ Register
+</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Login to Zain KSA" id="descriptionMeta">
+    <meta name="author" content="Zain KSA">
+
+    
+            <link rel="canonical" href="https://zain.app/en/auth/login">
+    
+    
+    <link rel="manifest" href="https://zain.app/manifest.json">
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="https://zain.app/manifest/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" href="https://zain.app/manifest/apple-icon-180x180.png">
+
+    
+    <meta name="format-detection" content="telephone=no">
+
+    
+    <meta name="theme-color" content="#fafafa">
+
+    
+    <link href="https://zain.app/css/fonts.css?v=257" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://zain.app/css/datetimepicker/flatpickr.min.css">
+    <link rel="stylesheet" href="https://zain.app/css/swiper/swiper-bundle.min.css">
+    <script async="" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-performance-standalone.js"></script><script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/X-oVtzDcTGjZVms4LEgykmCV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-1hXncclAK9oddvNk7nwUp8lOZ2IQZ8EORLvz9K99Lac8WLGSbW6clTN1YX0NyXHn"></script><script async="" src="https://cdn.adjust.com/adjust-latest.min.js"></script><script type="text/javascript">
+//<![CDATA[
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//]]>
+</script><script type="text/javascript" src="/TSbd/0851fd02ccab2000aac7f2952981cd936c93da4f138753b076bc2593a641296390d3b5c60f55db2d?type=2"></script><script type="application/javascript">
+        !function (t, a, e, r, s, n, l, d, o) {
+            t.Adjust = t.Adjust || {}, t.Adjust_q = t.Adjust_q || [];
+            for (var c = 0; c < n.length; c++) l(t.Adjust, t.Adjust_q, n[c]);
+            d = a.createElement("script"), o = a.getElementsByTagName("script")[0], d.async = !0, d.src = "https://cdn.adjust.com/adjust-latest.min.js", d.onload = function () {
+                for (var a = 0; a < t.Adjust_q.length; a++) t.Adjust[t.Adjust_q[a][0]].apply(t.Adjust, t.Adjust_q[a][1]);
+                t.Adjust_q = []
+            }, o.parentNode.insertBefore(d, o)
+        }(window, document, 0, 0, 0, ["initSdk", "trackEvent", "addGlobalCallbackParameters", "addGlobalPartnerParameters", "removeGlobalCallbackParameter", "removeGlobalPartnerParameter", "clearGlobalCallbackParameters", "clearGlobalPartnerParameters", "switchToOfflineMode", "switchBackToOnlineMode", "stop", "restart", "gdprForgetMe", "disableThirdPartySharing", "initSmartBanner"], function (t, a, e) {
+            t[e] = function () {
+                a.push([e, arguments])
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="https://zain.app/css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="https://zain.app/css/styles-ltr.css?v=257">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-TV2P0JQM0S" async=""></script></head>
+
+<body class="initialized">
+<div id="lottieLoaderContainer" style="display: none;">
+    <lottie-player src="https://zain.app/assets/json/loader.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player>
+</div>
+    <header id="header" class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="header__start">
+                    <a class="header__logo" href="https://zain.app/en/home">
+                        <img src="https://zain.app/images/zain-logo.svg" alt="Zain" title="Zain" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="header__end">
+                    <div class="header__locale">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
+    <span>ع</span>
+    <img src="https://zain.app/images/icons/ic-back-arrow.svg" alt="Locale" title="Locale" loading="lazy">
+</a>
+<div class="dropdown-menu dropdown-menu-right locale-menu">
+    <h2>Language</h2>
+            <a href="/en/auth/login" class="active">English</a>
+            <a href="/ar/auth/login" class="">العربية</a>
+            <a href="/ur/auth/login" class="">اردو</a>
+    </div>
+                    </div>
+                    
+                    
+                    <div class="header__account">
+                        <a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="false">
+                            <img src="https://zain.app/images/icons/ic-account.svg" alt="Account" title="Account" loading="lazy">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right account-menu">
+                            <h2>My Account</h2>
+                                                            <div class="home-box shadow-box home-box--login-register account-menu__item">
+                                    <a href="https://zain.app/en/auth/login" class="whole-link"></a>
+                                    <div class="home-box__info">
+                                        <h4>Login or Register</h4>
+                                        <p>Anyone can join!</p>
+                                        <a href="https://zain.app/en/auth/login" class="home-box__icon-link">
+                                            <img src="https://zain.app/images/icons/ic-login-logout-arrow.svg" alt="Login or Register">
+                                        </a>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <nav id="navbar" class="navbar">
+        <div class="container">
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="https://zain.app/en/home" class="nav-link ">
+                <img src="https://zain.app/images/icons/ic-home.svg" alt="Home" title="Home" loading="lazy" class="navbar__icon">
+                <img src="https://zain.app/images/icons/ic-home-active.svg" alt="Home" title="Home" loading="lazy" class="navbar__icon navbar__icon--active">
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://zain.app/en/dashboard" class="nav-link ">
+                <img src="https://zain.app/images/icons/ic-dashboard.svg" alt="Dashboard" title="Dashboard" loading="lazy" class="navbar__icon">
+                <img src="https://zain.app/images/icons/ic-dashboard-active.svg" alt="Dashboard" title="Dashboard" loading="lazy" class="navbar__icon navbar__icon--active">
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://zain.app/en/help" class="nav-link ">
+                <img src="https://zain.app/images/icons/ic-help.svg" alt="Help" title="Help" loading="lazy" class="navbar__icon">
+                <img src="https://zain.app/images/icons/ic-help-active.svg" alt="Help" title="Help" loading="lazy" class="navbar__icon navbar__icon--active">
+                <span>Help</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://zain.app/en/settings" class="nav-link ">
+                <img src="https://zain.app/images/icons/ic-more.svg" alt="Settings" title="Settings" loading="lazy" class="navbar__icon">
+                <img src="https://zain.app/images/icons/ic-more-active.svg" alt="Settings" title="Settings" loading="lazy" class="navbar__icon navbar__icon--active">
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+</div>
+    </nav>
+
+<main id="main" class="main">
+                <div class="login bg-login">
+        <section class="page-header pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        
+                        <h1 class="page-header__title text-center mb-0 d-none">
+                            Login/ Register
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-form page-form--login mt-lg-4 mb-lg-5 mb-md-4 mt-3 mb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-2 col-12 page-form--login__offset"></div>
+                    <div class="col-lg-12 col-md-8 col-12 page-form--login__wrapper">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 page-form--login__col">
+                                <form class="form form-pjax showLoader" role="form" method="POST" action="https://zain.app/en/auth/validate-login">
+                                    <input type="hidden" name="_token" value="YJUmItHFt1YLgpQqKgXs8oICn0Q1dJbPdwwrTyIx">
+                                    <div class="form__header form__header--has-image">
+                                        <div class="form__header-content form__header-content--has-image">
+                                            <h2 class="form__title">Welcome to Zain World!</h2>
+                                            <h6 class="form__subtitle">
+                                                You can login or register from here
+                                            </h6>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form__body">
+                                        <div class="form-group">
+                                            <div class="input-text">
+                                                <input type="text" id="txtMobileNumberEmail" name="username" value="" class="required remove-star validate-login-username">
+                                                <label for="txtMobileNumberEmail">Mobile Number or Email Address</label>
+                                            </div>
+                                            <div class="input-text__error-message">
+                                                                                                    Missing Data
+                                                                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                                                                    <input type="checkbox" id="chkRememberMe" name="remember_me">
+                                                                                                <label for="chkRememberMe">
+                                                    <img src="https://zain.app/images/icons/ic-checkbox-unchecked.svg" alt="Checkbox" title="Checkbox" loading="lazy" class="checkbox__icon">
+                                                    <img src="https://zain.app/images/icons/ic-checkbox-checked.svg" alt="Checkbox" title="Checkbox" loading="lazy" class="checkbox__icon checkbox__icon--checked">
+                                                    <span>Remember Me</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__footer mt-4">
+                                        <button type="submit" class="btn btn-green">
+                                            Proceed
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    
+            <div class="modal modal--beta-feedback animate" id="modal-beta" tabindex="-1" aria-labelledby="modalBetaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <img src="https://zain.app/images/icons/ic-close.svg" alt="Close" title="Close">
+                </button>
+            </div>
+            <div id="modal-beta-content" class="modal-content-wrapper">
+                <form id="formFeedback" class="form form-custom">
+                    <input type="hidden" name="_token" value="YJUmItHFt1YLgpQqKgXs8oICn0Q1dJbPdwwrTyIx">
+                    <input type="hidden" name="section" value="    Login/ Register
+">
+                    <div class="feedback__block-content">
+                        <div class="feedback__block-info">
+                            <h2 class="feedback__block-title">How was your experience?</h2>
+                            <h3 id="feedbackStatus" class="feedback__feedback-status">&nbsp;</h3>
+                        </div>
+
+                        <ul class="feedback__ratings-list list-unstyled p-0">
+                                                            <li>
+                                    <div class="feedback__radio">
+                                        <input type="radio" id="terrible" name="rating" value="1" data-class="terrible" data-title="Terrible">
+                                        <label for="terrible" class="terrible"></label>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="feedback__radio">
+                                        <input type="radio" id="bad" name="rating" value="2" data-class="bad" data-title="Bad">
+                                        <label for="bad" class="bad"></label>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="feedback__radio">
+                                        <input type="radio" id="okay" name="rating" value="3" data-class="okay" data-title="Okay">
+                                        <label for="okay" class="okay"></label>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="feedback__radio">
+                                        <input type="radio" id="good" name="rating" value="4" data-class="good" data-title="Good">
+                                        <label for="good" class="good"></label>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="feedback__radio">
+                                        <input type="radio" id="great" name="rating" value="5" data-class="great" data-title="Great">
+                                        <label for="great" class="great"></label>
+                                    </div>
+                                </li>
+                                                    </ul>
+
+                        <div class="form-box__inputs w-100">
+                            <div class="form-group mb-4">
+                                <div id="inputTextSubscriber" class="input-text white">
+                                    <input type="tel" id="betaSubscriber" name="subscriber" inputmode="numeric" class="required phone-number validate-phone-number numbers-only" placeholder="05XXXXXXXX" autocomplete="off">
+                                    <label for="betaSubscriber">Mobile Number</label>
+                                    <a href="javascript:void(0)" class="d-lg-none d-none">
+                                        <img src="https://zain.app/images/icons/ic-user-profile.svg" alt="User" title="User" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="input-text__error-message"></div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <div class="input-text input-text--textarea">
+                                    <textarea type="text" id="betaFeedback" name="description" rows="4"></textarea>
+                                    <label for="betaFeedback">
+                                        Write your feedback here
+                                    </label>
+                                </div>
+                                <div class="input-text__error-message"></div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <div class="input-file" data-max="3">
+                                    <input type="hidden" name="images" id="betaImages" value="" class="input-file__urls">
+                                    <input multiple="" type="file" id="betaFile">
+                                    <ul id="betaFiles" class="input-file__files"></ul>
+                                    <label for="betaFile">
+                                        <span>
+                                            Click here to upload screenshot (Max 3)
+                                        </span>
+                                    </label>
+                                    <span>Upload Screenshot</span>
+                                </div>
+                                <div class="input-text__error-message"></div>
+                            </div>
+                        </div>
+
+                        <div class="feedback__block-btn">
+                            <button type="submit" class="btn btn-green" disabled="">Submit</button>
+                            <a href="javascript:void(0);" data-dismiss="modal">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="modal-beta-status" class="modal-content-wrapper"></div>
+        </div>
+    </div>
+</div>
+</main>
+    <footer id="footer" class="footer d-md-block d-none">
+        <footer id="footer" class="footer d-md-block d-none">
+    <div class="row">
+        <div class="col">
+            <p class="text-start">
+                Version v3.26.73
+            </p>
+        </div>
+        <div class="col">
+            <p class="text-center">
+                © 2025 Zain KSA
+            </p>
+        </div>
+        <div class="col">
+                    </div>
+    </div>
+</footer>
+
+    </footer>
+
+
+
+<form id="formGlobalCsrfToken"><input type="hidden" name="_token" value="YJUmItHFt1YLgpQqKgXs8oICn0Q1dJbPdwwrTyIx"></form>
+
+<script src="https://zain.app/js/jquery/jquery-3.5.1.min.js"></script>
+<script src="https://zain.app/js/popper/popper.min.js"></script>
+<script src="https://zain.app/js/bootstrap/bootstrap.min.js"></script>
+<script src="https://zain.app/js/pjax/jquery.pjax.js"></script>
+<script src="https://zain.app/js/moment/moment-with-locales.min.js"></script>
+<script src="https://zain.app/js/datetimepicker/flatpickr.js"></script>
+<script src="https://zain.app/js/datetimepicker/flatpickr-ar.js"></script>
+<script src="https://zain.app/js/swiper/swiper-bundle.min.js"></script>
+<script src="https://zain.app/js/chartjs/chart.min.js"></script>
+<script src="https://zain.app/js/chartjs/chartjs-plugin-annotation.min.js"></script>
+<script src="https://zain.app/js/masonry/masonry.pkgd.min.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-performance.js"></script>
+
+<script>
+        var analyticsParams = null;
+    </script>
+<script src="https://cdn.adjust.com/adjust-latest.min.js"></script>
+<script src="https://zain.app/js/analytics.js"></script>
+<script src="https://zain.app/js/helpers.js?v=257"></script>
+<script src="https://zain.app/js/scripts.js?v=257"></script>
+
+<script src="https://zain.app/build/lang/en.js?v=257"></script>
+
+<script>
+    var app_locale = "en";
+            var user = null;
+        var downloadAppPopupTimer = 0;
+    var idNumberConfig = {"id_number.block_time":"15","id_number.cache_ttl":"604800","id_number.max_length":"22","id_number.max_trials":"5","id_number.min_length":"4","id_number.only_numbers":"0","id_number.time_interval":"15"};
+</script>
+
+<script>
+    window.addEventListener("load", () => {
+        const swUrl = '/sw.js';
+        registerValidSW(swUrl);
+    });
+
+    function registerValidSW(swUrl) {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register(swUrl)
+                .then((registration) => {
+                    if (registration.waiting) {
+                        postSkipWaitingMessage(registration);
+                    }
+
+                    registration.onupdatefound = () => {
+                        const installingWorker = registration.installing;
+                        if (installingWorker) {
+                            installingWorker.onstatechange = () => {
+                                if (installingWorker.state === "installed") {
+                                    if (navigator.serviceWorker.controller) {
+                                        postSkipWaitingMessage(registration);
+                                    } else {
+                                        console.log('Service Worker initialized for the first time');
+                                    }
+                                }
+                            };
+                        }
+                    };
+                })
+                .catch((error) => {
+                    console.error("Error during service worker registration:", error);
+                });
+        }
+    }
+
+    function postSkipWaitingMessage(registration) {
+        registration.waiting.postMessage('SKIP_WAITING');
+    }
+</script>
+
+
+
+</body></html>
